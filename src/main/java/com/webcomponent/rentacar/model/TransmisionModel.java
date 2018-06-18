@@ -5,11 +5,22 @@
  */
 package com.webcomponent.rentacar.model;
 
+import javax.annotation.Generated;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 /**
  *
  * @author 19947450-2
  */
+@Entity
+@Table (name="transmision")
+
 public class TransmisionModel {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
       private int idTransmision;
     private String nombreTransmision;
     private String detalle;
